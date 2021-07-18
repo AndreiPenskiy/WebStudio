@@ -98,8 +98,7 @@ h2 {
   }
 }
 
-.site-nav__link,
-.contact__link {
+.site-nav__link {
   text-decoration: none;
   color: #212121;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -107,15 +106,25 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
-  .site-nav__link,
-  .contact__link {
+  .site-nav__link {
     padding: 32px 0;
   }
 }
 
-.site-nav__link:hover, .site-nav__linkfocus,
-.contact__link:hover,
-.contact__linkfocus {
+.site-nav__link .contact__link {
+  text-decoration: none;
+  color: #212121;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav__link .contact__link {
+    padding: 32px 0;
+  }
+}
+
+.site-nav__link:hover, .site-nav__linkfocus {
   color: #2196f3;
 }
 
@@ -275,11 +284,13 @@ h2 {
   position: absolute;
   top: 21px;
   right: 10px;
-  cursor: pointer;
 }
 
-.mobile-open {
+.mobile-open,
+.mobile-close {
   cursor: pointer;
+  border: transparent;
+  background-color: white;
 }
 
 .mobile-menu__link {

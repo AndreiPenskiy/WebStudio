@@ -19,13 +19,21 @@
   }
 }
 
-.site-nav__link,
-.contact__link {
+.site-nav__link {
   text-decoration: none;
   color: #212121;
   transition: color 250ms $cubik;
   @media screen and (min-width: $tablet) {
     padding: 32px 0;
+  }
+
+  .contact__link {
+    text-decoration: none;
+    color: #212121;
+    transition: color 250ms $cubik;
+    @media screen and (min-width: $desktop) {
+      padding: 32px 0;
+    }
   }
 
   &:hover,
@@ -152,11 +160,13 @@
   position: absolute;
   top: 21px;
   right: 10px;
-  cursor: pointer;
 }
 
-.mobile-open {
+.mobile-open,
+.mobile-close {
   cursor: pointer;
+  border: transparent;
+  background-color: white;
 }
 
 .mobile-menu__link {
