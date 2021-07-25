@@ -15,7 +15,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
-  @media screen and (max-width: $desktop - 1px) {
+  @media screen and (max-width: $tablet - 1px) {
     text-align: center;
   }
 }

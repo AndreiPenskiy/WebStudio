@@ -4,7 +4,6 @@
   background-repeat: no-repeat;
   background-position: center;
   max-width: 1600px;
-  height: 400px;
   @media screen and(min-width:$desktop) {
     height: 600px;
   }
@@ -83,9 +82,7 @@
 .hero-overlay {
   padding: 118px 15px;
   width: 100%;
-  @media screen and(min-width:$mobile) {
-    width: $mobile;
-  }
+  position: relative;
   @media screen and(min-width:$tablet) {
     width: $tablet;
   }

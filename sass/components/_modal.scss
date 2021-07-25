@@ -20,13 +20,19 @@
 
 .modal {
   position: absolute;
-  height: 581px;
-  width: 528px;
+  height: 609px;
+  width: 90%;
+  max-width: 450px;
   background-color: $white-color;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms $cubik;
+  @media screen and (min-width: $desktop) {
+    height: 581px;
+    width: 528px;
+    max-width: 528px;
+  }
 }
 
 .modal-button {

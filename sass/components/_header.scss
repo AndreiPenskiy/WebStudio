@@ -73,18 +73,15 @@
   margin-right: 50px;
 }
 
-.contact {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -50px;
-}
-
 .contact__link {
   color: $accenttext-color;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.43;
   letter-spacing: 0.02em;
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+  }
 }
 
 .contact__link {
@@ -144,6 +141,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+  z-index: 99;
 }
 
 .mobile-nav__container {
@@ -204,6 +202,9 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: $pretty-color;
+  @media screen and (max-width: 479px) {
+    flex-wrap: wrap;
+  }
 }
 
 .mobile-media__link {
