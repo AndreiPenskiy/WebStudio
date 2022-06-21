@@ -6,9 +6,11 @@
   @media screen and (min-width: $mobile) {
     max-width: $mobile;
   }
+
   @media screen and (min-width: $tablet) {
     max-width: $tablet;
   }
+
   @media screen and (min-width: $desktop) {
     max-width: $desktop;
   }
@@ -16,6 +18,7 @@
 
 .section {
   padding: 60px 0px;
+
   @media screen and (min-width: $desktop) {
     padding: 94px 0;
   }
@@ -24,7 +27,7 @@
 body {
   color: $accenttext-color;
   font-family: $main-font;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 img {
@@ -50,6 +53,7 @@ p {
 h2 {
   text-align: center;
   margin-bottom: 30px;
+
   @media screen and (min-width: $desktop) {
     margin-bottom: 50px;
   }
